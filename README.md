@@ -1,13 +1,16 @@
 ## Violência contra a população LGBTQIA+ no Brasil
 
 O painel interativo foi desenvolvido com o objetivo de complementar a atividade final da disciplina **População, Sociedade e Ambiente**, ministrada pela professora **Mariana Andreotti** no curso de **Ciências Atuariais** da **UFRN**. Além disso, busca 
-divulgar dados referentes às denúncias realizadas por pessoas LGBTQIA+ ao Disque 100 em 2024, com foco nas características das vítimas e dos suspeitos envolvidos nos casos de violações de direitos humanos.
+divulgar dados referentes às denúncias realizadas ao Disque 100 em 2024 que possuem vítimas LGBTQIA+, dando ênfase nas características das vítimas e dos suspeitos envolvidos nos casos de violações de direitos humanos.
 
 🔗 **Acesse o painel online:** [Painel LGBTQIA+ Disque 100 – 2024](https://renan-balbino.shinyapps.io/Painel-LGBTQIA-Disque100-2024/)  
 
+<br>
+
 ## BaseR – PadronizandoVariaveis
 
-É o script de base. Nele os [dados do Disque 100](https://www.gov.br/mdh/pt-br/acesso-a-informacao/dados-abertos/disque100) são organizados adequadamente para diversos tipos de análises. Em resumo:
+É o script de base. Nele os [dados do Disque 100](https://www.gov.br/mdh/pt-br/acesso-a-informacao/dados-abertos/disque100) são organizados adequadamente para diversos tipos de análises.  
+Em resumo, são realizados:
 
 - Importação dos dados para o R;  
 - Análise inicial para melhor entendimento;  
@@ -25,13 +28,16 @@ divulgar dados referentes às denúncias realizadas por pessoas LGBTQIA+ ao Disq
   - `Deficiência_da_vítima2`  
   - `Deficiência_do_suspeito2`
 
+<br>
+
 ### Agrupamentos realizados
 
-**Relação vítima-suspeito:**  
-- **Núcleo Familiar Direto**: Pai, Mãe, Filho(a), Neto(a), Bisneto(a), Trisavô(ó), Avô(ó), Bisavô(ó), Irmão(ã), Esposa(o), Companheiro(a), Companheiro(a) da mãe/do pai, Namorado(a), Padrasto/Madrasta, Enteado(a), Genro/Nora, Sogro(a), Cunhado(a), Tio(a), Primo(a), Sobrinho(a), Ex-esposa(o), Ex-companheiro(a), Ex-namorado(a);  
-- **Familiares Indiretos / Não Específicos**: Outros familiares, Pessoa com quem mantém/manteve convivência familiar, Padrinho/Madrinha;  
-- **Rede de Convivência Próxima**: Amigo(a), Amigo(a) da família, Vizinho(a), Mora na mesma residência mas não é familiar, Morou na mesma residência mas não é familiar, Aluno(a), Colega de trabalho (mesmo nível hierárquico), Cuidador(a);  
-- **Relações de Poder / Hierarquia**: Diretor(a) de escola, Diretor(a) de unidade prisional, Diretor/Gestor de instituição, Professor(a), Outros profissionais da educação, Líder religioso(a), Treinador(a)/Técnico(a), Profissional de saúde, Empregador/Patrão (hierarquicamente superior), Empregado(a) doméstico, Empregado (hierarquicamente inferior), Funcionário/voluntário/prestador de serviço para instituição, Prestador(a) de serviço;  
+**Relação entre suspeito e vítima:**  
+- **Núcleo Familiar Direto**: Pai, Mãe, Filho(a), Neto(a), Bisneto(a), Trisavô(ó), Avô(ó), Bisavô(ó), Irmão(ã), Esposa(o), Companheiro(a), Companheiro(a) da mãe/do pai, Namorado(a), Padrasto/Madrasta, Enteado(a), Genro/Nora, Sogro(a), Cunhado(a), Tio(a), Primo(a), Sobrinho(a);  
+- **Familiares Indiretos / Não Específicos**: Outros familiares, Pessoa com quem mantém/manteve convivência familiar, Padrinho/Madrinha, Ex-esposa(o), Ex-companheiro(a), Ex-namorado(a);  
+- **Rede de Convivência Próxima**: Amigo(a), Amigo(a) da família, Vizinho(a), Mora na mesma residência mas não é familiar, Morou na mesma residência mas não é familiar, Cuidador(a);  
+- **Relações de Poder / Hierarquia**: Diretor(a) de escola, Diretor(a) de unidade prisional, Diretor/Gestor de instituição, Professor(a), Outros profissionais da educação, Líder religioso(a), Treinador(a)/Técnico(a), Profissional de saúde, Empregador/Patrão (hierarquicamente superior);  
+- **Outras Relações Profissionais:** Empregado(a) doméstico, Empregado (hierarquicamente inferior), Funcionário/voluntário/prestador de serviço para instituição, Prestador(a) de serviço, Aluno(a), Colega de trabalho (mesmo nível hierárquico);  
 - **Outros**: Não se aplica, Outros.  
 
 > **Nota:** Antes da realização dos cálculos para a variável *Relação_vítima_suspeito2*, no script *TabelasYGraficosDinamicos*, foram removidos casos em que a própria vítima foi classificada como autora.  
