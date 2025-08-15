@@ -1,0 +1,91 @@
+.person {
+  display: inline-block;
+  padding: $spacer;
+  border: $border-width solid $border-color;
+  @include border-radius;
+  @include box-shadow;
+  outline: 0;
+  width: 300px;
+  margin: $grid-gutter-width;
+  margin-right: 0;
+  position: relative;
+  padding-bottom: 1.75rem;
+
+  .name {
+    font-size: 1.50rem;
+    font-weight: bold;
+    color: $gray-800;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $gray-600;
+    margin-bottom: 0.25rem;
+  }
+
+  .company {
+    font-size: 0.80rem;
+    color: $gray-600;
+    margin-bottom: 0.75rem;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: -0.1rem;
+    padding: 0;
+    
+    .social-link {
+      color: $gray-600 !important;
+      text-decoration: none !important;
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      
+      &:hover {
+        color: $gray-800 !important;
+      }
+      
+      svg {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor !important;
+        margin: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    width: auto;
+    margin-right: $grid-gutter-width;
+  }
+}
+
+.person:last-of-type {
+  margin-right: $grid-gutter-width;
+}
+
+.tooltip {
+  font-family: inherit !important;
+}
+
+.tooltip-inner {
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  background-color: #5E213F !important;
+  font-size: 0.85rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #5E213F !important;
+}
