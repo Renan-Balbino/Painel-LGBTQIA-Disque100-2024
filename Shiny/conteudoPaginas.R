@@ -198,7 +198,7 @@ Colab <- div(
            "Universidade Federal do Rio Grande do Norte", 
            "abath_soares@hotmail.com", 
            "https://br.linkedin.com/in/kleber-soares-510641110"), 
-    person("Mariana Dias", "Pós-doutoranda em Demografia", 
+    person("Mariana Andreotti", "Pós-doutoranda em Demografia", 
            "Universidade Federal do Rio Grande do Norte", 
            "mariana_andreotti_d@hotmail.com", 
            clattes = "http://lattes.cnpq.br/0076588033576486", 
@@ -214,7 +214,9 @@ Colab <- div(
     person("Talita Cardoso", "Graduando em Atuária", 
            "Universidade Federal do Rio Grande do Norte", 
            "talitacardoso1989@gmail.com", 
-           "https://www.linkedin.com/in/talita-silva-b26482100/")
+           "https://www.linkedin.com/in/talita-silva-b26482100/", 
+           clattes = "", 
+           orcid = "https://orcid.org/0009-0001-7004-8590")
   )
 )
 
@@ -232,18 +234,22 @@ tagDisque100 <- tagList(
           span("Disque 100 – O que é?"))
     ),
     div(style = "font-size: 17px; text-align: justify;", 
-        HTML("O Disque Direitos Humanos – Disque 100 é um serviço público gratuito 
+        
+        HTML("<p>O Disque Direitos Humanos – Disque 100 é um serviço público gratuito 
              do <strong>Ministério dos Direitos Humanos e da Cidadania</strong>. 
              Ele recebe denúncias de violações de direitos humanos, especialmente 
-             contra pessoas em situação de vulnerabilidade, como:"),
-        tags$ul(
-          tags$li("Crianças e adolescentes"),
-          tags$li("Idosos"),
-          tags$li("Pessoas com deficiência"),
-          tags$li("População LGBTQIA+"),
-          tags$li("Pessoas em situação de rua"),
-          tags$li("Indígenas, quilombolas, ciganos, entre outros")
-        )),
+             contra pessoas em situação de vulnerabilidade, como:</p>
+        <ul>
+          <li>Crianças e adolescentes</li>
+          <li>Idosos</li>
+          <li>Pessoas com deficiência</li>
+          <li>População LGBTQIA+</li>
+          <li>Pessoas em situação de rua</li>
+          <li>Indígenas, quilombolas, ciganos, entre outros</li>
+        </ul>")
+        # )
+        
+        ),
     
     br(),
     
@@ -321,10 +327,11 @@ tagSobre <- tagList(
           span("Violência contra a população LGBTQIA+ no Brasil"))
     ),
     div(style = "font-size: 17px; text-align: justify;", 
-        HTML("O painel foi desenvolvido com o objetivo de complementar a atividade final da disciplina <strong>População, 
-             Sociedade e Ambiente</strong> ministrada pela professora, <strong>Mariana Andreotti</strong>, e divulgar dados 
-             referentes às denúncias realizadas por pessoas LGBTQIA+ ao Disque 100 em 2024, com foco nas características das 
-             vítimas e dos suspeitos envolvidos nos casos de violações de direitos humanos.")),
+        HTML("<p>O painel foi desenvolvido com o objetivo de complementar a atividade final da disciplina <strong>População, 
+             Sociedade e Ambiente</strong> ministrada pela professora <strong>Mariana Andreotti</strong> no curso de <strong>Ciências 
+             Atuariais</strong> da <strong>UFRN</strong>. Além disso, busca divulgar dados referentes às denúncias realizadas ao <strong>Disque 
+             100 em 2024</strong> que possuem <strong>vítimas LGBTQIA+</strong>, dando ênfase nas características das vítimas e dos suspeitos envolvidos nos 
+             casos de violações de direitos humanos.</p>")),
     
     br(), 
     
@@ -335,15 +342,17 @@ tagSobre <- tagList(
           span("Possibilidades fornecidas"))
     ),
     div(style = "font-size: 17px;", 
-        tags$ul(
-          tags$li("Analisar o volume de denúncias ao longo dos meses de 2024"),
-          tags$li("Observar a frequência por estado brasileiro"),
-          tags$li("Verificar diferenças segundo cor/raça autodeclarada"),
-          tags$li("Avaliar a presença ou não de deficiência entre as vítimas"),
-          tags$li("Compreender a distribuição por faixa etária"),
-          tags$li("Explorar o perfil religioso das vítimas e dos suspeitos"),
-          tags$li("Investigar a relação entre suspeito e vítima"),
-          tags$li("Analisar as motivações atribuídas às denúncias"),
+        HTML(
+          "<ul>
+              <li>Analisar o volume de denúncias ao longo dos meses de 2024</li>
+              <li>Observar a frequência por estado brasileiro</li>
+              <li>Verificar diferenças segundo cor/raça autodeclarada</li>
+              <li>Avaliar a presença ou não de deficiência entre as vítimas</li>
+              <li>Compreender a distribuição por faixa etária</li>
+              <li>Explorar o perfil religioso das vítimas e dos suspeitos</li>
+              <li>Investigar a relação entre suspeito e vítima</li>
+              <li>Analisar as motivações atribuídas às denúncias</li>
+          </ul>"
         )),
     
     br(), 

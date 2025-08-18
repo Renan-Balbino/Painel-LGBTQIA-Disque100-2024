@@ -1,7 +1,7 @@
 # DEFINICOES INICIAIS ====================================================================================================
 
 # Diretorio:
-setwd(r"(H:\Estudos\R\Shiny\Painel-LGBTQIAPN-Disque100-2024)")
+setwd(r"(H:\Estudos\R\Shiny\Painel-LGBTQIA-Disque100-2024\BaseR)")
 
 
 # Carregando pacotes:
@@ -259,34 +259,34 @@ Dados4 <- Dados3 %>%
               "Avô(ó)", "Bisavô(ó)", "Irmão(ã)", "Esposa(o)", "Companheiro(a)", 
               "Companheiro(a) da mãe/Do pai", "Namorado(a)", "Padrasto/Madrasta", 
               "Enteado(a)", "Genro/Nora", "Sogro(a)", "Cunhado(a)", "Tio(a)", 
-              "Primo(a)", "Sobrinho(a)", "Ex-esposa(o)", "Ex-companheiro(a)", 
-              "Ex-namorado(a)"), 
+              "Primo(a)", "Sobrinho(a)"), 
           
           `Familiares Indiretos/Não Específicos` = 
-            c("Outros familiares", 
+            c("Outros familiares", "Padrinho/Madrinha", 
               "Pessoa com quem mantém/Manteve convivência familiar", 
-              "Padrinho/Madrinha"), 
+              "Ex-esposa(o)", "Ex-companheiro(a)", "Ex-namorado(a)"), 
           
           `Rede de Convivência Próxima` = 
             c("Amigo(a)", "Amigo(a) da família", "Vizinho(a)", 
               "Mora na mesma residência mas não é familiar", 
-              "Morou na mesma residência mas não é familiar", 
-              "Aluno(a)", "Colega de trabalho (mesmo nível hierárquico)", 
-              "Cuidador(a)"), 
+              "Morou na mesma residência mas não é familiar"), 
           
           `Relações de Poder/Hierarquia` = 
             c("Diretor(a) de escola", "Diretor(a) de unidade prisional", 
               "Diretor/Gestor de instituição", "Professor(a)", 
               "Outros profissionais da educação", "Líder religioso(a)", 
               "Treinador(a)/Técnico(a)", "Profissional de saúde", 
-              "Empregador/Patrão (hierarquicamente superior)", 
-              "Empregado(a) doméstico", "Empregado (hierarquicamente inferior)", 
+              "Empregador/Patrão (hierarquicamente superior)"), 
+          
+          `Outras Relações` = 
+            c("Empregado(a) doméstico", "Empregado (hierarquicamente inferior)", 
               "Funcionário, voluntário ou prestador de serviço para instituição", 
-              "Prestador(a) de serviço"), 
+              "Prestador(a) de serviço", "Colega de trabalho (mesmo nível hierárquico)", 
+              "Aluno(a)", "Cuidador(a)"), 
           
           Outros = c("Não se aplica", "Outros")), 
         
-        c("Outros", "Não identificado")), 
+        c("Outras Relações", "Outros", "Não identificado")), 
     
     
     Religião_da_vítima2 = 
