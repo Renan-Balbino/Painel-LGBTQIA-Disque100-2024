@@ -3,7 +3,7 @@
 O painel interativo foi desenvolvido com o objetivo de complementar a atividade final da disciplina **População, Sociedade e Ambiente**, ministrada pela professora **Mariana Andreotti** no curso de **Ciências Atuariais** da **UFRN**. Além disso, busca 
 divulgar dados referentes às denúncias realizadas ao **Disque 100 em 2024** que possuem **vítimas LGBTQIA+**, dando ênfase nas características das vítimas e dos suspeitos envolvidos nos casos de violações de direitos humanos.
 
-🔗 **Acesse o painel online:** [Painel LGBTQIA+ Disque 100 – 2024](https://renan-balbino.shinyapps.io/Painel-LGBTQIA-Disque100-2024/)  
+**Acesse o painel online:** [Painel LGBTQIA+ Disque 100 – 2024](https://renan-balbino.shinyapps.io/Painel-LGBTQIA-Disque100-2024/)  
 
 <br>
 
