@@ -58,7 +58,7 @@ Em resumo, são realizados:
 
 - Conforme o [Dicionário dos Dados do Disque 100](https://www.gov.br/mdh/pt-br/acesso-a-informacao/dados-abertos/DicionriodeDadosDisque100.xlsx), cada **hash** representa uma denúncia.  
 - Uma mesma denúncia pode conter múltiplos registros para: grupo de violação, violação em um mesmo local, tipo de violação, espécie de violação, motivação, agravante, denúncia e denúncia emergencial.  
-- Para obter o número real de denúncias, foi necessário:  
+- Para obter a contagem correta, foi necessário:  
   - Selecionar apenas as variáveis relevantes para cada caso  
   - Eliminar linhas duplicadas  
   - Exemplo: Se uma denúncia possui 5 tipos de violações, ela é registrada 5 vezes, mas só existe uma vítima e um suspeito. Ao manter apenas as colunas `hash`, vítima e suspeito e eliminar duplicatas, obtemos o número real de denúncias. 
